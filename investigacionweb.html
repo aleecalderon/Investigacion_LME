@@ -8,16 +8,21 @@
 </head>
 <body>
     <header>
+        <div class="item">
+            <img id="imgheader" src="img/js.png"  width="90" height="90" >
+            </div>
         <h1>¿Qué es JavaScript?</h1>
+        
     </header>
+    
     <div class="container">
         <h2>Introducción</h2>
         <p>JavaScript es un lenguaje de programación que se utiliza principalmente para crear contenido dinámico e interactivo en sitios web. Fue desarrollado por Netscape y su primera versión se lanzó en 1995.</p>
-
-         <ul>
-<h2>¿Que es JavaScript?</h2>
-<p>JavaScript es un lenguaje de programación que te permite crear contenido de actualización dinámica en páginas web. A diferencia de HTML (que estructura el contenido) y CSS (que aplica estilo), JavaScript se utiliza para implementar funciones complejas, como actualizaciones en tiempo real, animaciones, interacción con el usuario y más1. En resumen, es la tercera capa del pastel de tecnologías web estándar, y con unas pocas líneas de código, puedes lograr mucho.</p>
-        </ul>
+        <br>
+         
+        <h2>¿Que es JavaScript?</h2>
+        <p>JavaScript es un lenguaje de programación que te permite crear contenido de actualización dinámica en páginas web. A diferencia de HTML (que estructura el contenido) y CSS (que aplica estilo), JavaScript se utiliza para implementar funciones complejas, como actualizaciones en tiempo real, animaciones, interacción con el usuario y más1. En resumen, es la tercera capa del pastel de tecnologías web estándar, y con unas pocas líneas de código, puedes lograr mucho.</p>
+        <br>
     
         <h2>Características Clave</h2>
         <ul>
@@ -26,15 +31,17 @@
             <li><strong>Integración:</strong> Se puede integrar fácilmente con HTML y CSS, los otros dos pilares del desarrollo web.</li>
             <li><strong>Event-Driven:</strong> JavaScript puede responder a eventos como clics, desplazamientos y entradas del teclado, lo que facilita la creación de aplicaciones web interactivas.</li>
         </ul>
-
+        <br>
         <h2>¿Cómo utilizar el JavaScript en una página web?</h2>
         <p>Tenemos entendido que HTML y CSS se encargan de generar elementos como textos y tablas, así como generar una capa estática a tu web, JavaScript se encarga de integrar elementos interactivos y animados a tu sitio web. Asimismo, este lenguaje es el encargado de controlar la relación entre las API y los sitios web que se están desarrollando.</p>
         <p>Dado que JavaScript es un lenguaje muy parametrizable para lo que se desea agregar a una página web, se debe saber que este lenguaje de programación se usa para varios procesos y creación de elementos en una página web, en primer lugar, para mostrar para qué se usa JavaScript en una página web, tenemos que tomar en cuenta que está en la parte del cliente. Si nos alejamos un poco de la creación de elementos sobre el “display” de un sitio web, es importante mencionar que Javascript almacena una serie de API (interfaz de programación de aplicaciones) del navegador que pueden estar relacionadas con el programa de código para la creación de un sitio web.</p>
         <p>Para utilizar JS en una página podemos tener una serie de pasos en concreto, los cuales nos explican el proceso de cómo utilizarlo en una página web:</p>
         <ul>
+            <br>
             <li><strong>Configurar el entorno de desarrollo.</strong> Se necesita de un editor de texto para escribir el código JavaScript. Se puede utilizar cualquier editor de nuestra elección, como Visual Studio Code, Sublime Text o Atom. Se tiene que tomar en cuenta que es necesario tener un navegador web para ejecutar el código JavaScript. Los navegadores más comunes, como Chrome, Firefox o Safari, son siempre excelentes opciones.</li>
             <li><strong>Crear un archivo HTML</strong> Se crea un archivo HTML en blanco y por lo general se le suele llamar “index.html”. Este archivo será la página web donde se puede ver los resultados del código JavaScript. Dentro del archivo HTML, se agrega el siguiente código básico:</li>
-            <pre>
+    
+            <pre style="padding-left: 120px;" >
                 <code>
                     &lt;!DOCTYPE html&gt;
                        &lt;html lang="en"&gt;
@@ -47,6 +54,7 @@
                        &lt;/body&gt;
                 </code>
             </pre>
+            
             <li><strong>Crear un archivo JavaScript.</strong> Se crea un archivo JavaScript en el mismo directorio donde se encuentra el archivo HTML y por lo general le llamamos “script.js”. Este archivo contendrá el código JavaScript que se ejecutará en la página web. Este se puede enlazar con el archivo HTML agregando la etiqueta "script" en el cuerpo del documento HTML, como se muestra en el código anterior.</li>
             <li><strong>Escribir el primer programa JavaScript.</strong> Dentro del archivo “script.js”, podemos comenzar escribiendo nuestro primer programa JavaScript. Un ejemplo simple que mostraría un mensaje de saludo en la consola del navegador seria:</li>
             <pre>
@@ -62,10 +70,10 @@
             <li><strong>Mejora la carga de la página</strong> JavaScript permite cargar contenido de forma dinámica sin tener que recargar la página completa.</li>
             <li><strong>Personalización</strong> JavaScript te permite crear efectos visuales únicos y personalizados para tu sitio</li>
         </ul>
-
-<h2>¿Manejo de variables en JavaScript?</h2>
+            <br>
+            <h2>¿Manejo de variables en JavaScript?</h2>
             <p> En JavaScript, el manejo de variables es fundamental para almacenar y manipular datos en tus programas. Permíteme explicarte: </p>
-            <h3>Declaracion de variables</h3>
+            <h2>Declaracion de variables</h2>
             <p>Puedes declarar variables utilizando las palabras clave var, let o const.</p>
             <ul>
                 <li><strong>var</strong>Antes de ES6, era la forma común de declarar variables. Permite reasignar valores.</li>
@@ -73,7 +81,7 @@
                         <li><strong>const</strong>También introducido en ES6, se utiliza para declarar constantes cuyos valores no cambian.</li>
         </ul>
 
-        
+        <br>
         <h2>Ejemplo Básico</h2>
         <p>A continuación, se muestra un ejemplo sencillo de código JavaScript que muestra un mensaje en la pantalla cuando se hace clic en un botón:</p>
         <pre><code>&lt;html&gt;
@@ -91,7 +99,12 @@
      &lt;/body&gt;
      &lt;/html&gt;
         </code></pre>
-    </div>
+    
+    <br>
+    <h2 class="letra">TABLA Y CALCULADORA DE IMC</h2>
+    <center><img src="img/IMC.png" alt="IMC" ></center>
+    <br>
+    <br>
 
        <div class="calculator">
             <h1>Calculadora de IMC</h1>
@@ -101,5 +114,10 @@
             <div class="result" id="result"></div>
         </div>
         <script src="calcuIMC.js"></script>
+    </div>
+
+        <footer id="dise-footer">
+            <p style="text-align: center;">&copy; 2014 <a href="https://www.udb.edu.sv/udb/">UNIVERSIDAD DON BOSCO</a></p>
+        </footer>
 </body>
 </html>
